@@ -6,3 +6,7 @@ RUN R -e "install.packages('ggplot2')"
 
 # Copy repo files
 COPY . /home/rstudio
+
+# Volume for github vredentials
+VOLUME /home/container_user/.ssh
+
