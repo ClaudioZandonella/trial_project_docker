@@ -5,4 +5,4 @@ FROM rocker/verse:3.6.1
 RUN R -e "install.packages('ggplot2')"
 
 # Copy repo files
-COPY . .
+COPY . /home/rstudio
